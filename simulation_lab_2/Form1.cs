@@ -28,5 +28,13 @@ namespace simulation_lab_2
 
             dataGridView1.Refresh();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _championship.Refresh();
+            _championship.Teams.Sort((x, y) => x.Name.CompareTo(y.Name));
+
+            dataGridView1.Refresh();
+        }
     }
 }

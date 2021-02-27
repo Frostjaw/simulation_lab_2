@@ -65,5 +65,19 @@ namespace simulation_lab_2
                 team.PlayGame(teamToPlay);
             }
         }
+
+        public void Refresh()
+        {
+            _currentRound = 1;
+            
+            foreach (var team in Teams)
+            {
+                team.Wins = 0;
+                team.Losses = 0;
+                team.Draw = 0;
+                team.Score = 0;
+                team.TotalGoals = 0;
+            }
+        }
     }
 }

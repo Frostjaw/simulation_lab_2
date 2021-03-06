@@ -44,6 +44,8 @@
                 Draw++;
                 team.Score++;
                 team.Draw++;
+
+                return;
             }
 
             team.Score += 2;
